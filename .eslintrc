@@ -1,0 +1,85 @@
+{
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+      "ecmaVersion": 2020,
+      "sourceType": "module",
+      "ecmaFeatures": {
+        "jsx": true
+      }
+    },
+    "settings": {
+      "react": {
+        "version": "detect"
+      },
+      "import/resolver": {
+        "typescript": {
+          "alwaysTryTypes": true
+        }
+      }
+    },
+    "env": {
+      "browser": true,
+      "node": true,
+      "jest": true
+    },
+    "extends": [
+      "plugin:@typescript-eslint/recommended",
+      "eslint:recommended",
+      "plugin:react/recommended",
+      "plugin:import/typescript",
+      "plugin:prettier/recommended",
+      "prettier/@typescript-eslint",
+      "plugin:css-modules/recommended",
+    ],
+    "plugins": [
+      "@typescript-eslint",
+      "import",
+      "react-hooks",
+      "css-modules"
+    ],
+    "rules": {
+      "semi": [
+        "error",
+        "always"
+      ],
+      "import/no-named-as-default-member": "off",
+      "import/namespace": "off",
+      "import/order": [
+        "error",
+        {
+          "alphabetize": {
+            "order": "asc",
+            "caseInsensitive": true
+          },
+          "groups": [
+            "index",
+            "sibling",
+            "parent",
+            "internal",
+            "external",
+            "builtin",
+            "object"
+          ]
+        }
+      ],
+      "jsx-a11y/label-has-associated-control": "off",
+      "jsx-a11y/anchor-is-valid": "off",
+      "@typescript-eslint/no-use-before-define": "off",
+      "@typescript-eslint/no-unused-vars": [
+        "error",
+        {
+          "vars": "all",
+          "args": "none"
+        }
+      ],
+      "@typescript-eslint/no-inferrable-types": [
+        "warn",
+        {
+          "ignoreParameters": true
+        }
+      ],
+      "@typescript-eslint/no-explicit-any": "off",
+      
+    }
+  }
+  
