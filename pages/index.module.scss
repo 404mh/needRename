@@ -1,0 +1,13 @@
+.root {
+  width: 100%;
+  max-width: 1024px;
+  margin: auto;
+  margin-top: 32px;
+}
+
+.logo_profile {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  justify-content: space-between;
+}
