@@ -1,0 +1,15 @@
+{
+    "extends": [
+      "stylelint-config-standard",
+      "stylelint-config-css-modules",
+      "stylelint-config-idiomatic-order"
+    ],
+    "plugins": [
+      "stylelint-order"
+    ],
+    "rules": {
+      "indentation": 2,
+      "selector-type-no-unknown": null,
+      "no-descending-specificity": null
+    }
+}
