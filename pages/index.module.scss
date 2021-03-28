@@ -11,3 +11,12 @@
   align-items: baseline;
   justify-content: space-between;
 }
+
+.til_submit_section {
+  display: flex;
+  flex-direction: column;
+
+  & > textarea {
+    margin: 10px 0;
+  }
+}
